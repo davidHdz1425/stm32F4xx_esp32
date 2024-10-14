@@ -13,8 +13,8 @@
 #include "esp_http_client.h"
 
 // WIFI CONSTANTS
-#define WIFI_SSID "INFINITUM2CAC"    
-#define WIFI_PASS "YCNeUW22wf" 
+#define WIFI_SSID "Your Own Wifi"    
+#define WIFI_PASS "Your Own Passwd" 
 
 // Thingspeak API key
 #define WRITE_API_KEY "RK8O57Q7CT9KS7DU" 
