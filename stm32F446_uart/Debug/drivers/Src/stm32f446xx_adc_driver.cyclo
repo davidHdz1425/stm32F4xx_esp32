@@ -1,0 +1,5 @@
+../drivers/Src/stm32f446xx_adc_driver.c:27:6:ADC_PeriClockControl	8
+../drivers/Src/stm32f446xx_adc_driver.c:49:6:ADC_Init	4
+../drivers/Src/stm32f446xx_adc_driver.c:87:6:ADC_DeInit	4
+../drivers/Src/stm32f446xx_adc_driver.c:97:6:ADC_StartConversion	1
+../drivers/Src/stm32f446xx_adc_driver.c:105:10:ADC_ReadValue	2
