@@ -17,7 +17,7 @@
 #define WIFI_PASS "Your Own Passwd" 
 
 // Thingspeak API key
-#define WRITE_API_KEY "RK8O57Q7CT9KS7DU" 
+#define WRITE_API_KEY "Api Key" 
 
 // UART PINS
 #define TX_PIN GPIO_NUM_17   
