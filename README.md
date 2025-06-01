@@ -37,8 +37,6 @@ las baterias.
 
 A continuacion se explicaran el diagrama de pines de este componente:
 
-![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
-
   - Pin de volatje (VC5-VC0): cuenta con seis entradas que se conectan a la celda de la bateria para monitorear el voltaje (Pin 1:6)
   - Pin de corrient de entrada positiva (SRP): entrada positiva del Sense Resistor (Pin 7)
   - Pin de corrient de entrada negativa (SRN): entrada negativa del Sense Resistor (Pin 8)
@@ -51,17 +49,18 @@ A continuacion se explicaran el diagrama de pines de este componente:
   - Pin de comunicacion (SCL-SDA): protocolo de comunicacion I2C (Pin 15:16)
   - Pin de tierra (VSS): entrada para conectar a GND (Pin 17)
   - Pin de control de mosfte (CHG-DSG): salidas de carga y descarga controlada por mosfet (Pin 18:19)
+
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
   
 Como se menciono anteriormente para el funcionamiento del BMS, se requiere el uso de trasnsitores MOSFET, que seran de 
 utilida para habilitar la carga o descraga de las baterias depeniendo de las condiciones que se hayan leido de temperatura, voltaje y 
 corriente, es por esto que se opta por usar el sigueinte mosfte:
 
-![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/MOSFET_IRF1404.png?raw=true)
-
   - IRF1404 (MOSFET N-Channel): 
       Vds = 40V
       Vgs = 1V a 2V 
       Id  = 162A
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/MOSFET_IRF1404.png?raw=true)
 
 Debido a que se monitorea la temperatura, es necesario el uso de un termistor que funcione como proteccion de las celdas de litio al 
 informar, por medio de la comunicacion I2C al microcontrolador, sobre un aumento de temperatura logrando activar una alarma que actuara 
