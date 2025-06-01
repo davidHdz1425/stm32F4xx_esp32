@@ -37,7 +37,7 @@ las baterias.
 
 A continuacion se explicaran el diagrama de pines de este componente:
 
-![image alt](image_url_diagrama)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
 
   - Pin de volatje (VC5-VC0): cuenta con seis entradas que se conectan a la celda de la bateria para monitorear el voltaje (Pin 1:6)
   - Pin de corrient de entrada positiva (SRP): entrada positiva del Sense Resistor (Pin 7)
@@ -123,7 +123,6 @@ cada una cuenta con su propio valor de termperatura, corriente y voltaje.
 En puntos previos, se ha explicado las caracteristicas de los compenentes mas especificos que se usaron para la operacion del sistema de 
 gestion de baterias. En este nuevo apartado, se explican las conexiones presentes en el circuito final que se muestra a continuacion.
 
-_#### INSERTE IMAGEN ####
 ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_Schematic.jpg?raw=true)
 
 
