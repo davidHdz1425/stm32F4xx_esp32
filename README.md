@@ -124,7 +124,7 @@ En puntos previos, se ha explicado las caracteristicas de los compenentes mas es
 gestion de baterias. En este nuevo apartado, se explican las conexiones presentes en el circuito final que se muestra a continuacion.
 
 _#### INSERTE IMAGEN ####
-![image alt](image_url_circuitofinalfinal)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_Schematic.jpg?raw=true)
 
 
 - Microcontrolador
