@@ -50,7 +50,7 @@ A continuacion se explicaran el diagrama de pines de este componente:
   - Pin de tierra (VSS): entrada para conectar a GND (Pin 17)
   - Pin de control de mosfte (CHG-DSG): salidas de carga y descarga controlada por mosfet (Pin 18:19)
 
-           ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
   
 Como se menciono anteriormente para el funcionamiento del BMS, se requiere el uso de trasnsitores MOSFET, que seran de 
 utilida para habilitar la carga o descraga de las baterias depeniendo de las condiciones que se hayan leido de temperatura, voltaje y 
@@ -61,7 +61,7 @@ corriente, es por esto que se opta por usar el sigueinte mosfte:
       Vgs = 1V a 2V 
       Id  = 162A
     
-        ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/MOSFET_IRF1404.png?raw=true)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/MOSFET_IRF1404.png?raw=true)
 
 Debido a que se monitorea la temperatura, es necesario el uso de un termistor que funcione como proteccion de las celdas de litio al 
 informar, por medio de la comunicacion I2C al microcontrolador, sobre un aumento de temperatura logrando activar una alarma que actuara 
@@ -73,14 +73,14 @@ para desactivar la carga. Este componente se conecta a la pin 14 y en este caso 
       Tolerancia: ±5% 
       Disipacion termica:  0.75mW/°C
 
-        ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/NTCLE100E3103JB0.jpg?raw=true)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/NTCLE100E3103JB0.jpg?raw=true)
 
 Por otro lado, el microcontrolador que se implementa es la black-pill que cuenta con un STM32F411CEU6, este chip permite usar la comunicacion
 anterioemente mencionada al configurar los pines PB8 y PB9 como funciones especiales. Mas adelante, se indagara en amyor medida sobre las
 conexion que se requieren, tanto en este chip como en los mencionados previamente. Ademas, estos elementos, no son los unico que se requieren 
 para obtener un optimo funcionamiento del circuito, esto tambien se profundorizara en la seccion de Installation.
 
-        ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/black-pill.jpg?raw=true)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/black-pill.jpg?raw=true)
  
 
 ## :zap: Usage
