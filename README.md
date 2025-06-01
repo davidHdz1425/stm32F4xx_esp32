@@ -56,7 +56,7 @@ Como se menciono anteriormente para el funcionamiento del BMS, se requiere el us
 utilida para habilitar la carga o descraga de las baterias depeniendo de las condiciones que se hayan leido de temperatura, voltaje y 
 corriente, es por esto que se opta por usar el sigueinte mosfte:
 
-![image alt](image_url_mosfet)
+![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/MOSFET_IRF1404.png?raw=true)
 
   - IRF1404 (MOSFET N-Channel): 
       Vds = 40V
