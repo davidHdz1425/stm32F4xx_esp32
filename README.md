@@ -50,7 +50,7 @@ A continuacion se explicaran el diagrama de pines de este componente:
   - Pin de tierra (VSS): entrada para conectar a GND (Pin 17)
   - Pin de control de mosfte (CHG-DSG): salidas de carga y descarga controlada por mosfet (Pin 18:19)
 
-        ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
+           ![image alt](https://github.com/davidHdz1425/stm32F4xx_esp32/blob/main/BMS_IO.jpg?raw=true)
   
 Como se menciono anteriormente para el funcionamiento del BMS, se requiere el uso de trasnsitores MOSFET, que seran de 
 utilida para habilitar la carga o descraga de las baterias depeniendo de las condiciones que se hayan leido de temperatura, voltaje y 
